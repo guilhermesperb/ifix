@@ -4,11 +4,11 @@
 # aqui E em ~lfs/.bashrc (seção 4.4) também.
 
 apt install -y \
-  ld
-  bison
-  gawk
-  gcc
-  g++
-  m4
-  make
-  texi2any
+  binutils \
+  bison \
+  gawk \
+  gcc \
+  g++ \
+  m4 \
+  make \
+  texinfo \

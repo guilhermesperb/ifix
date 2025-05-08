@@ -1,4 +1,4 @@
-# Verificar dependências
+# Instalar dependências
 ### Uso:
 
 Instala as depenências necessárias que não foram encontradas no item 1
