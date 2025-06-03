@@ -2,6 +2,8 @@
 # Um script para listar os números de versão de ferramentas críticas de desenvolvimento
 # Se você tiver ferramentas instaladas em outros diretórios, ajuste PATH
 # aqui E em ~lfs/.bashrc (seção 4.4) também.
+verify_dependencies(){
+
 LC_ALL=C
 PATH=/usr/bin:/bin
 bail() { echo "FATAL: $1"; exit 1; }
@@ -12,14 +14,14 @@ ver_check()
 {
   if ! type -p $2 &>/dev/null
   then
-    echo "ERRO: Não consigo encontrar $2 ($1)"; return 1;
+    echo "$STR_ERROR: $STR_NOT_FOUND $2 ($1)"; return 1;
   fi
   v=$($2 --version 2>&1 | grep -E -o '[0-9]+\.[0-9\.]+[a-z]*' | head -n1)
   if printf '%s\n' $3 $v | sort --version-sort --check &>/dev/null
   then
     printf "OK: %-9s %-6s >= $3\n" "$1" "$v"; return 0;
   else
-    printf "ERRO: %-9s é MUITO ANTIGO ($3 ou mais recente exigido)\n" "$1";
+    printf "$STR_ERROR: %-9s é MUITO ANTIGO ($3 ou mais recente exigido)\n" "$1";
     return 1;
   fi
 }
@@ -62,7 +64,7 @@ else echo "ERRO: Núcleo Linux NÃO suporta UNIX 98 PTY"; fi
 alias_check() {
   if $1 --version 2>&1 | grep -qi $2
   then printf "OK: %-4s is $2\n" "$1";
-  else printf "ERRO: %-4s NÃO é $2\n" "$1"; fi
+  else printf "$STR_ERROR: %-4s NÃO é $2\n" "$1"; fi
 }
 echo "Aliases:"
 alias_check awk GNU
@@ -73,3 +75,4 @@ if printf "int main(){}" | g++ -x c++ -
 then echo "OK: g++ funciona";
 else echo "ERRO: g++ NÃO funciona"; fi
 rm -f a.out
+}
