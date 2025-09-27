@@ -6,3 +6,5 @@
 printf "$STR_WELCOME\n\n"
 
 verify_dependencies
+
+criar_usuario_lfs
