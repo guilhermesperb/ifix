@@ -1,4 +1,6 @@
 #!/bin/bash
 PROJECT_NAME=IFIX
-. ./env_strings.sh
+ROOT_DIR=/mnt/ifix
+RECIPES_BASE_PATH=./recipes
 
+. ./env_strings.sh
