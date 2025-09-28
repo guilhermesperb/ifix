@@ -15,5 +15,6 @@ export LFS=/mnt/lfs
 2. Execute este script como root
 
 ```bash
-sudo ./criar_usuario_lfs.sh
+cd recipes/003_create_user_lfs
+sudo ./create_user_lfs.sh
 ```bash

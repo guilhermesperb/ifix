@@ -20,5 +20,9 @@ Se algumas dessas ferramentas não estiver instalada, o script informará para i
 1. Dê permissão de execução ao script
 
 ```bash
-	chmod +x verificar_dependencias.sh
+	chmod +x check_deps.sh
+```
+2. Execute o arquivo
+```bash
+	./check_deps.sh
 ```

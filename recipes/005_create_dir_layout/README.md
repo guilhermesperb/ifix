@@ -23,3 +23,10 @@ mnt/
 * []: Talvez crie ou não, dependendo das condições abaixo:
 	* [`lib64/`]: será gerado apenas se o comando `uname -m` retornar x86_64, ou seja sistema 64 bits e arquitetura AMD64 compativel com x86
 * ->: indica um link, onde a esquerda é o nome do link e a direita é o caminho referenciado
+
+
+### Como executar
+1. Execute o arquivo
+```bash
+	./create_dir_layout.sh
+```

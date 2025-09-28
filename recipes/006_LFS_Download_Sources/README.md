@@ -28,5 +28,5 @@ Caso tenha alguma dependência ausente, o script informará como isntalá-la, e 
 1. Dê permissão de execução ao script:
 
 ```bash
-	chmod +x Lfs_download_sources.hs
+	chmod +x lfs_download_sources.hs
 ```

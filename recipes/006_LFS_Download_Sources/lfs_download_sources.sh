@@ -1,7 +1,5 @@
 #!/bin/bash
 
-set -e
-
 download_sources(){
 	local LFS_VERSION=11.3
 	local LFS_MIRROR="https://www.linuxfromscratch.org/lfs/downloads/$LFS_VERSION"

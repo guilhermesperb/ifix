@@ -10,6 +10,6 @@ dentro da pasta ifix, digite os 2 comandos abaixo:
 
 ##### comando:
 ```bash
-cd 1-verificar_dependencias
-source ./verificar_dependencias.sh
+cd recipes/001_verify_dependencies
+source ./verify_dependencies.sh
 ```

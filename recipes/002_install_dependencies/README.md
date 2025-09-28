@@ -11,7 +11,7 @@ dentro da pasta ifix, digite os 3 comandos abaixo:
 ##### comando:
 
 ```bash
-2-instalando_dependencias_basicas
+cd recipes/002_install_dependencies
 su
-source ./instalar_dependencias_basicas.sh
+source ./install_dependencies.sh
 ```
