@@ -1,3 +1,11 @@
-. $RECIPES_BASE_PATH/verify_dependencies/verify_dependencies.sh
-. $RECIPES_BASE_PATH/install_dependencies/install_dependencies.sh
-. $RECIPES_BASE_PATH/create_dir_layout/create_dir_layout.sh
+. $RECIPES_BASE_PATH/001_verify_dependencies/verify_dependencies.sh
+. $RECIPES_BASE_PATH/002_install_dependencies/install_dependencies.sh
+. $RECIPES_BASE_PATH/003_create_user_lfs/create_user_lfs.sh
+. $RECIPES_BASE_PATH/004_check_deps/check_deps.sh
+. $RECIPES_BASE_PATH/005_create_dir_layout/create_dir_layout.sh
+. $RECIPES_BASE_PATH/006_LFS_Download_Sources/lfs_download_sources.sh
+. $RECIPES_BASE_PATH/007_GRUB_bios_partition/alocate_space.sh
+. $RECIPES_BASE_PATH/008_conveninece_particions/create_particions.sh
+. $RECIPES_BASE_PATH/009_fs_particion/create_fs_particion.sh
+. $RECIPES_BASE_PATH/010_define_file_mask/add_mask.sh
+. $RECIPES_BASE_PATH/011_mounting_particion/mount_particion.sh
